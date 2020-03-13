@@ -1,0 +1,32 @@
+/*Zach Frehner*/
+
+body {
+    background: grey;
+    font-weight: bold;
+}
+.btn {
+    background-color: red;
+}
+fieldset {
+    border: solid 2px red;
+    padding: 1em;
+}
+#mailingList {
+    padding: 1.5em;
+}
+#submit {
+    margin-top: 15px;
+}
+h1 {
+    font-size: 80px;
+    background: -webkit-linear-gradient(grey, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+ .hidden {
+     display: none;
+ }
+.err {
+    color: blue;
+    display: inline;
+}

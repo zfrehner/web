@@ -1,0 +1,132 @@
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="guestBook.css">
+    <title>GuestBook</title>
+
+    <link rel="icon" type="image/png" href="images/gb.jpg">
+
+</head>
+<body>
+
+<div class="container-fluid" id="main">
+    <div class="jumbotron">
+        <h1 class="display-4" id="h1">GuestBook</h1>
+        <p class="lead">Stay Professionally Connected</p>
+        <hr class="my-4">
+        <p>Stay connected with colleague's from school, work, and life!</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Start Connecting!</a>
+    </div>
+</div>
+<div class="container">
+    <form id="guestBook" action ="confirmGuest.php" method="post">
+        <!--Contact information -->
+        <fieldset class="form-group">
+            <legend>Contact Info</legend>
+
+            <div class="form-group">
+                <label for="firstName" >First Name</label>
+                <input type="text" class="form-control" id="firstName" name="firstName">
+                <span class="hidden" id="err-fName">Please enter your first name</span>
+            </div>
+
+            <div class="form-group">
+                <label for="lastName" >Last Name</label>
+                <input type="text" class="form-control" id="lastName" name="lastName">
+                <span class="hidden" id="err-lName">Please enter you last name</span>
+            </div>
+
+            <div class="form-group">
+                <label for="jobTitle" >Job Title</label>
+                <input type="text" class="form-control" id="jobTitle" name="jobTitle">
+                <span class="hidden" id="err-jobTitle">Please enter your job title</span>
+            </div>
+
+            <div class="form-group">
+                <label for="companyName" >Company Name</label>
+                <input type="text" class="form-control" id="companyName" name="companyName">
+                <span class="hidden" id="err-companyName">Please enter your company name</span>
+            </div>
+
+            <div class="form-group">
+                <label for="linked-in" >Linked-In URL</label>
+                <input type="text" class="form-control" id="linked-in" name="linked-in">
+                <span class="hidden" id="err-link">Please enter a valid Linked-in URL.</span>
+            </div>
+
+            <div class="form-group">
+                <label for="email" >Email Address</label>
+                <input type="text" class="form-control" id="email" name="email">
+                <span class="hidden" id="err-email">Please enter a valid Email address.</span>
+                <span class="hidden" id="err-list">Please provide email for mailing list.</span>
+            </div>
+        </fieldset>
+
+        <fieldset class="form-group">
+            <legend>How Did We Meet?</legend>
+            <div class="form-group">
+                <label for="meet">Select an Option</label>
+                <select class="form-control" id="meet" name="meet">
+                    <option value="none">We met at...</option>
+                    <option value="school">School</option>
+                    <option value="work">Work</option>
+                    <option value="party">Party</option>
+                    <option value="meetup">Meet Up</option>
+                    <option value="jobFair">Job Fair</option>
+                    <option value="other">Other</option>
+                </select>
+                <span class="hidden" id="err-meet">Please select an option.</span>
+            </div>
+
+            <div class="form-group">
+                <label for="specify">If "Other" Please Specify</label>
+                <textarea class="form-control" id="specify" name="specify" rows="3"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Send A Message</label>
+                <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+            </div>
+
+        </fieldset>
+
+        <fieldset id="mailingList">
+            <legend>Sign-up for our Mailing List</legend>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="list" id="list" value="yes" checked>
+                <label class="form-check-label" for="list">
+                    Yes, add me to your mailing list!
+                </label>
+            </div>
+
+            <div class="form-check">
+                <h5>Please Choose an Email Format:</h5>
+                <input class="form-check-input" type="radio" name="method" id="html" value="html" checked>
+                <label class="form-check-label col-md-2" for="html">
+                    HTML
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="method" id="text" value="text">
+                <label class="form-check-label col-md-2" for="text">
+                    TEXT
+                </label>
+            </div>
+
+        </fieldset>
+        <button class="btn btn-primary btn-lg" role="button" id="submit" type="submit">Sign Up!</button>
+    </form>
+</div>
+
+<script src="gbValid.js"></script>
+
+</body>
+<footer>
+    <a href="https://zfrehner.greenriverdev.com/305/GuestBook/admin.php" ><button class="btn btn-warning" type="submit" >Admin</button></a>
+</footer>
+</html>

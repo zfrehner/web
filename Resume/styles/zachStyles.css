@@ -1,0 +1,54 @@
+/*Zach Frehner*/
+
+
+#foot {
+    height: 125px;
+    background-color: grey;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 2em;
+}
+/*.fa-linkedin {
+    background: #3B5998;
+    color: white;
+}*/
+#zach {
+    max-height: 200px;
+    max-width: 200px;
+    border-radius: 10px;
+}
+#git {
+    max-height: 100px;
+    max-width: 100px;
+    border-radius: 50px;
+}
+fieldset {
+    padding: 1em;
+    margin: 5px;
+}
+#summary {
+    border-bottom: solid 2px darkblue;
+    background-color: darkgray;
+}
+.jumbotron {
+    background-color: grey;
+}
+#about {
+    border: solid 2px darkblue;
+    padding: 10px;
+    color: white;
+}
+
+img {
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+}
+
+#h3 {
+    color: white;
+}
+.left {
+    border-right: solid 1px darkblue;
+}
+
